@@ -148,9 +148,9 @@ fun MarketAddressScreen(
             verticalArrangement = Arrangement.spacedBy(4.dp)
         ) {
             Text(
-                text = "Allamat" ,
+                text = "Alamat" ,
                 fontSize = 14.sp ,
-                fontWeight = FontWeight.Normal,
+                fontWeight = FontWeight.SemiBold,
                 color = colorResource(id = R.color.onyx_black)
             )
 
