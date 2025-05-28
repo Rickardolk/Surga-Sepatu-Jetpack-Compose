@@ -1,6 +1,7 @@
 package com.example.surgasepatu4.view.screens
 
 import android.graphics.Paint.Align
+import android.widget.Space
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -10,6 +11,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -165,6 +167,7 @@ fun MyMarketScreen(
                     onClick = { /*TODO*/ },
                     modifier = Modifier
                         .align(Alignment.CenterEnd)
+                        .height(24.dp)
                         .padding(end = 16.dp),
                     border = BorderStroke(
                         width = 1.dp,
@@ -305,6 +308,8 @@ fun MyMarketScreen(
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
                     Column(
+                        modifier
+                            .width(98.dp),
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.spacedBy(4.dp)
                     ) {
@@ -335,6 +340,8 @@ fun MyMarketScreen(
                     }
 
                     Column(
+                        modifier
+                            .width(98.dp),
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.spacedBy(4.dp)
                     ) {
@@ -365,6 +372,8 @@ fun MyMarketScreen(
                     }
 
                     Column(
+                        modifier
+                            .width(98.dp),
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.spacedBy(4.dp)
                     ) {
@@ -395,6 +404,7 @@ fun MyMarketScreen(
                     }
                 }
 
+                Spacer(modifier = Modifier.height(16.dp))
                 Row(
                     modifier
                         .fillMaxWidth(),
@@ -402,6 +412,8 @@ fun MyMarketScreen(
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
                     Column(
+                        modifier
+                            .width(98.dp),
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.spacedBy(4.dp)
                     ) {
@@ -432,6 +444,8 @@ fun MyMarketScreen(
                     }
 
                     Column(
+                        modifier
+                            .width(98.dp),
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.spacedBy(4.dp)
                     ) {
@@ -462,6 +476,8 @@ fun MyMarketScreen(
                     }
 
                     Column(
+                        modifier
+                            .width(98.dp),
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.spacedBy(4.dp)
                     ) {
