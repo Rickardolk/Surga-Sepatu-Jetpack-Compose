@@ -1,11 +1,8 @@
-package com.example.surgasepatu4.view.screens
+package com.example.surgasepatu4.view.screens.startSelling
 
-import android.graphics.Paint.Align
-import android.widget.Space
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -22,12 +19,12 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.outlined.Notifications
 import androidx.compose.material.icons.outlined.Settings
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -43,11 +40,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.example.surgasepatu4.R
 
 @Composable
 fun MyMarketScreen(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    navController: NavController
 ) {
     Column(
         modifier
@@ -72,12 +72,18 @@ fun MyMarketScreen(
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.spacedBy(16.dp)
                 ) {
-                    Icon(
-                        imageVector = Icons.Default.ArrowBack ,
-                        contentDescription = "icon arrow back",
-                        tint = colorResource(id = R.color.ocean_boat_blue),
-                        modifier = Modifier.size(32.dp)
-                    )
+                    IconButton(
+                        onClick = {
+                            navController.popBackStack()
+                        }
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.ArrowBack ,
+                            contentDescription = "icon arrow back",
+                            tint = colorResource(id = R.color.ocean_boat_blue),
+                            modifier = Modifier.size(32.dp)
+                        )
+                    }
 
                     Text(
                         text = "Toko Saya" ,
@@ -164,7 +170,9 @@ fun MyMarketScreen(
                 }
 
                 OutlinedButton(
-                    onClick = { /*TODO*/ },
+                    onClick = {
+                        navController.navigate("my product screen")
+                    },
                     modifier = Modifier
                         .align(Alignment.CenterEnd)
                         .height(24.dp)
@@ -314,7 +322,9 @@ fun MyMarketScreen(
                         verticalArrangement = Arrangement.spacedBy(4.dp)
                     ) {
                         Button(
-                            onClick = { /*TODO*/ },
+                            onClick = {
+                                navController.navigate("my product screen")
+                            },
                             shape = RoundedCornerShape(8.dp),
                             contentPadding = PaddingValues(2.dp) ,
                             modifier = Modifier.size(40.dp),
@@ -521,5 +531,6 @@ fun MyMarketScreen(
 @Preview
 @Composable
 private fun view() {
-    MyMarketScreen()
+    val navController = rememberNavController()
+    MyMarketScreen(navController = navController)
 }

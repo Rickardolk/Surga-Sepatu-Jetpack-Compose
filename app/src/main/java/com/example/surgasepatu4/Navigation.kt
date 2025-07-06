@@ -3,9 +3,11 @@ package com.example.surgasepatu4
 import android.app.Activity
 import android.widget.Toast
 import androidx.activity.compose.BackHandler
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -20,15 +22,21 @@ import androidx.navigation.compose.rememberNavController
 import com.example.surgasepatu4.model.BottomNavBarNavigation
 import com.example.surgasepatu4.model.Preferences.isUserLoggedIn
 import com.example.surgasepatu4.view.component.BottomNavBar
-import com.example.surgasepatu4.view.screens.AddProductScreen
-import com.example.surgasepatu4.view.screens.CartScreen
-import com.example.surgasepatu4.view.screens.HistoryScreen
-import com.example.surgasepatu4.view.screens.HomeScreen
+import com.example.surgasepatu4.view.screens.menu.CartScreen
+import com.example.surgasepatu4.view.screens.menu.HistoryScreen
+import com.example.surgasepatu4.view.screens.menu.HomeScreen
 import com.example.surgasepatu4.view.screens.ListItemScreen
 import com.example.surgasepatu4.view.screens.LoginScreen
-import com.example.surgasepatu4.view.screens.ProfileScreen
+import com.example.surgasepatu4.view.screens.menu.ProfileScreen
 import com.example.surgasepatu4.view.screens.RegisterScreen
 import com.example.surgasepatu4.view.screens.ResetPasswordScreen
+import com.example.surgasepatu4.view.screens.startSelling.AddProductScreen
+import com.example.surgasepatu4.view.screens.startSelling.DeliverySettingsScreen
+import com.example.surgasepatu4.view.screens.startSelling.MarketAddressScreen
+import com.example.surgasepatu4.view.screens.startSelling.MarketInformationScreen
+import com.example.surgasepatu4.view.screens.startSelling.MyMarketScreen
+import com.example.surgasepatu4.view.screens.startSelling.MyProductScreen
+import com.example.surgasepatu4.view.screens.startSelling.StartSellingScreen
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
@@ -136,10 +144,45 @@ fun Navigation() {
             }
 
             composable("add product") {
-                AddProductScreen(
-                    context = context
+                StartSellingScreen(
+                    navController = navController
                 )
             }
+
+            composable("market information screen") {
+                MarketInformationScreen(
+                    navController = navController
+                )
+            }
+
+            composable("market address screen") {
+                MarketAddressScreen(
+                    navController = navController
+                )
+            }
+
+            composable("delivery settings screen") {
+                DeliverySettingsScreen(
+                    navController = navController
+                )
+            }
+
+            composable("my market screen") {
+                MyMarketScreen(
+                    navController = navController
+                )
+            }
+
+            composable("my product screen") {
+                MyProductScreen(
+                    navController = navController
+                )
+            }
+            
+            composable("add product screen") {  
+                AddProductScreen(navController = navController)
+            }
+
         }
     }
 }

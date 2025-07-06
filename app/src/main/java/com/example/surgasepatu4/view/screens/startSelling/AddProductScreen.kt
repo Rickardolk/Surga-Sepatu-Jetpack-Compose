@@ -1,4 +1,4 @@
-package com.example.surgasepatu4.view.screens
+package com.example.surgasepatu4.view.screens.startSelling
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -18,8 +18,11 @@ import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.KeyboardArrowRight
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -33,11 +36,14 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.example.surgasepatu4.R
 
 @Composable
-fun AddProductScreen2(
-    modifier: Modifier = Modifier
+fun AddProductScreen(
+    modifier: Modifier = Modifier,
+    navController: NavController
 ) {
 
     Column(
@@ -63,12 +69,18 @@ fun AddProductScreen2(
                     horizontalArrangement = Arrangement.spacedBy(16.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Icon(
-                        imageVector = Icons.Default.ArrowBack ,
-                        contentDescription = "ic arrow back",
-                        modifier = Modifier.size(32.dp),
-                        tint = colorResource(id = R.color.ocean_boat_blue)
-                    )
+                    IconButton(
+                        onClick = {
+                            navController.popBackStack()
+                        }
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.ArrowBack ,
+                            contentDescription = "ic arrow back",
+                            modifier = Modifier.size(32.dp),
+                            tint = colorResource(id = R.color.ocean_boat_blue)
+                        )
+                    }
 
                     Text(
                         text = "Tambah Produk" ,
@@ -339,6 +351,29 @@ fun AddProductScreen2(
             }
         }
 
+        Spacer(modifier = Modifier.weight(1f))
+        Button(
+            onClick = {
+                navController.popBackStack()
+            },
+            modifier = Modifier
+                .padding(bottom = 14.dp)
+                .fillMaxWidth()
+                .height(46.dp)
+                .padding(horizontal = 14.dp) ,
+            shape = RoundedCornerShape(8.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = colorResource(id = R.color.ocean_boat_blue)
+            )
+        ) {
+            Text(
+                text = "Simpan" ,
+                fontSize = 16.sp ,
+                fontWeight = FontWeight.Medium
+            )
+
+        }
+
 
 
 
@@ -349,5 +384,6 @@ fun AddProductScreen2(
 @Preview
 @Composable
 private fun view() {
-    AddProductScreen2()
+    val navController = rememberNavController()
+    AddProductScreen(navController = navController)
 }

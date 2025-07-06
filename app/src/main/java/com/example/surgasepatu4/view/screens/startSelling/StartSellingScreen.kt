@@ -1,17 +1,14 @@
-package com.example.surgasepatu4.view.screens
+package com.example.surgasepatu4.view.screens.startSelling
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.WindowInsets
-import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.systemBars
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.Button
@@ -31,11 +28,14 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.example.surgasepatu4.R
 
 @Composable
 fun StartSellingScreen(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    navController : NavController
 ) {
     Box(
         modifier
@@ -59,7 +59,9 @@ fun StartSellingScreen(
                         .fillMaxSize()
                 ) {
                     IconButton(
-                        onClick = {  },
+                        onClick = {
+                            navController.popBackStack()
+                        },
                         modifier = Modifier
                             .align(Alignment.CenterStart)
                             .padding(start = 8.dp)
@@ -105,7 +107,9 @@ fun StartSellingScreen(
 
             Spacer(modifier = Modifier.weight(1f))
             Button(
-                onClick = { /*TODO*/ },
+                onClick = {
+                    navController.navigate("market information screen")
+                },
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(50.dp)
@@ -129,5 +133,6 @@ fun StartSellingScreen(
 @Preview
 @Composable
 private fun view() {
-    StartSellingScreen()
+    val navController = rememberNavController()
+    StartSellingScreen(navController = navController)
 }

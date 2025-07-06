@@ -1,9 +1,10 @@
-package com.example.surgasepatu4.view.screens
+package com.example.surgasepatu4.view.screens.menu
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -21,7 +22,6 @@ import androidx.compose.material3.VerticalDivider
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
@@ -198,7 +198,8 @@ fun HistoryScreen(
                 Column(
                     modifier
                         .fillMaxWidth()
-                        .padding(horizontal = 24.dp)
+                        .padding(horizontal = 24.dp),
+                    verticalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
                     Text(
                         text = "Latest Transaction" ,
@@ -213,7 +214,7 @@ fun HistoryScreen(
                         VerticalDivider(
                             thickness = 2.dp,
                             modifier = Modifier
-                                .height(50.dp)
+                                .height(46.dp)
                                 .background(
                                     color = colorResource(id = R.color.ocean_boat_blue) ,
                                     shape = RoundedCornerShape(16.dp)
@@ -221,23 +222,126 @@ fun HistoryScreen(
                             color = Color.Transparent
                         )
 
-                        Column {
-                            Text(
-                                text = "Tuesday, 08/10/2025" ,
-                                fontSize = 12.sp ,
-                                fontWeight = FontWeight.Normal,
-                                color = colorResource(id = R.color.onyx_black_semi_transparent)
-                            )
+                        Spacer(modifier = Modifier.width(18.dp))
+                        Text(
+                            text = "Tuesday, 08/10/2025\n" + "Amount 2",
+                            fontSize = 12.sp ,
+                            lineHeight = 20.sp,
+                            fontWeight = FontWeight.Normal,
+                            color = colorResource(id = R.color.onyx_black_semi_transparent)
+                        )
 
+                        Spacer(modifier = Modifier.weight(1f))
+                        Button(
+                            onClick = { /*TODO*/ },
+                            contentPadding = PaddingValues(1.dp) ,
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = colorResource(id = R.color.ocean_boat_blue)
+                            ),
+                            modifier = Modifier
+                                .height(26.dp)
+                                .width(66.dp),
+                            shape = RoundedCornerShape(12.dp)
+                        ) {
                             Text(
-                                text = "Amount 2" ,
-                                fontSize = 12.sp ,
-                                fontWeight = FontWeight.Normal,
-                                color = colorResource(id = R.color.onyx_black_semi_transparent)
+                                text = "Paid" ,
+                                fontSize = 12.sp,
+                                color = Color.White,
+                                fontWeight = FontWeight.Normal
                             )
                         }
-
                     }
+
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        VerticalDivider(
+                            thickness = 2.dp,
+                            modifier = Modifier
+                                .height(46.dp)
+                                .background(
+                                    color = colorResource(id = R.color.ocean_boat_blue) ,
+                                    shape = RoundedCornerShape(16.dp)
+                                ),
+                            color = Color.Transparent
+                        )
+
+                        Spacer(modifier = Modifier.width(18.dp))
+                        Text(
+                            text = "Tuesday, 08/10/2025\n" + "Amount 2",
+                            fontSize = 12.sp ,
+                            lineHeight = 20.sp,
+                            fontWeight = FontWeight.Normal,
+                            color = colorResource(id = R.color.onyx_black_semi_transparent)
+                        )
+
+                        Spacer(modifier = Modifier.weight(1f))
+                        Button(
+                            onClick = { /*TODO*/ },
+                            contentPadding = PaddingValues(1.dp) ,
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = colorResource(id = R.color.ocean_boat_blue)
+                            ),
+                            modifier = Modifier
+                                .height(26.dp)
+                                .width(66.dp),
+                            shape = RoundedCornerShape(12.dp)
+                        ) {
+                            Text(
+                                text = "Paid" ,
+                                fontSize = 12.sp,
+                                color = Color.White,
+                                fontWeight = FontWeight.Normal
+                            )
+                        }
+                    }
+
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        VerticalDivider(
+                            thickness = 2.dp,
+                            modifier = Modifier
+                                .height(46.dp)
+                                .background(
+                                    color = colorResource(id = R.color.onyx_black_semi_transparent) ,
+                                    shape = RoundedCornerShape(16.dp)
+                                ),
+                            color = Color.Transparent
+                        )
+
+                        Spacer(modifier = Modifier.width(18.dp))
+                        Text(
+                            text = "Wednesday, 09/10/2025\n" + "Amount 99",
+                            fontSize = 12.sp ,
+                            lineHeight = 20.sp,
+                            fontWeight = FontWeight.Normal,
+                            color = colorResource(id = R.color.onyx_black_semi_transparent)
+                        )
+
+                        Spacer(modifier = Modifier.weight(1f))
+                        Button(
+                            onClick = { /*TODO*/ },
+                            contentPadding = PaddingValues(1.dp) ,
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = colorResource(id = R.color.onyx_black_semi_transparent)
+                            ),
+                            modifier = Modifier
+                                .height(26.dp)
+                                .width(108.dp),
+                            shape = RoundedCornerShape(12.dp)
+                        ) {
+                            Text(
+                                text = "Not Paid Yet" ,
+                                fontSize = 12.sp,
+                                color = Color.White,
+                                fontWeight = FontWeight.Normal
+                            )
+                        }
+                    }
+
+
+
                 }
             }
         }

@@ -1,4 +1,4 @@
-package com.example.surgasepatu4.view.screens
+package com.example.surgasepatu4.view.screens.startSelling
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -20,6 +20,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -27,16 +28,18 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.example.surgasepatu4.R
 
 @Composable
 fun MarketAddressScreen(
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    navController: NavController
 ) {
     Column(
         modifier
@@ -54,15 +57,21 @@ fun MarketAddressScreen(
                     .height(54.dp)
                     .background(Color.White)
             ) {
-                Icon(
-                    imageVector = Icons.Default.ArrowBack ,
-                    contentDescription = "ic arrow back",
-                    tint = colorResource(id = R.color.ocean_boat_blue),
-                    modifier = Modifier
-                        .padding(start = 16.dp)
-                        .size(32.dp)
-                        .align(Alignment.CenterStart)
-                )
+                IconButton(
+                    onClick = {
+                        navController.popBackStack()
+                    }
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.ArrowBack ,
+                        contentDescription = "ic arrow back",
+                        tint = colorResource(id = R.color.ocean_boat_blue),
+                        modifier = Modifier
+                            .padding(start = 16.dp)
+                            .size(32.dp)
+                            .align(Alignment.CenterStart)
+                    )
+                }
 
                 Text(
                     text = "Alamat Toko" ,
@@ -242,7 +251,9 @@ fun MarketAddressScreen(
 
         Spacer(modifier = Modifier.weight(1f))
         Button(
-            onClick = { /*TODO*/ },
+            onClick = {
+                navController.popBackStack()
+            },
             colors = ButtonDefaults.buttonColors(
                 containerColor = colorResource(id = R.color.ocean_boat_blue)
             ),
@@ -270,5 +281,6 @@ fun MarketAddressScreen(
 @Preview
 @Composable
 private fun view() {
-    MarketAddressScreen()
+    val navController = rememberNavController()
+    MarketAddressScreen(navController = navController)
 }
