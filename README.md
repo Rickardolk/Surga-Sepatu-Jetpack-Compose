@@ -23,7 +23,7 @@ Gunakan salah satu metode berikut:
 #### 🔹 Via Git
 
 ```bash id="ss_git_clone_id"
-git clone https://github.com/username/repository-name.git
+git clone https://github.com/username/repository-name.git](https://github.com/Rickardolk/Surga-Sepatu-Jetpack-Compose.git
 ```
 
 #### 🔹 Download ZIP
