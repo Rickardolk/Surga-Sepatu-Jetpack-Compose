@@ -43,7 +43,8 @@ Project ini memerlukan file konfigurasi API yang **tidak disertakan**.
 * Hubungkan device / jalankan emulator
 
 
----
+
+<br>
 <br>
 
 ### ⚠️ Important
@@ -84,8 +85,8 @@ This project requires API configuration files that are **not included**.
 ### 3. Run the Application
 
 * Connect a device or run an emulator
----
 
 
+<br>
 
 Thank you 🙌
