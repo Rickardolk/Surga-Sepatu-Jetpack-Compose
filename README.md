@@ -8,16 +8,6 @@ Untuk alasan keamanan dan privasi, proyek ini **tidak menyertakan file konfigura
 
 ---
 
-### 📌 Mengapa tidak disertakan?
-
-File sensitif tidak dimasukkan untuk:
-
-* Mencegah akses tidak sah ke layanan backend
-* Melindungi integritas sistem dan data pengguna
-* Mengikuti best practice dalam pengembangan software
-
----
-
 ### 🚀 Cara Menjalankan Project
 
 Anda memiliki dua opsi:
