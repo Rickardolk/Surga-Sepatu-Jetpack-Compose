@@ -8,24 +8,28 @@ Untuk alasan keamanan dan privasi, proyek ini **tidak menyertakan file konfigura
 
 ---
 
-### 🚀 Cara Menjalankan Project
+## 🚀 Cara Menjalankan Project
 
-Anda memiliki dua opsi:
+### 1. Download / Clone Project
 
-#### 🔹 Opsi 1: Meminta Akses
+Pilih salah satu metode berikut:
 
-Silakan hubungi developer untuk mendapatkan file konfigurasi API.
+**🔹 Via Git (disarankan)**
+**🔹 Download ZIP**
+---
+
+### 2. Konfigurasi API
+
+Project ini memerlukan file konfigurasi API yang **tidak disertakan**.
+
+#### 🔹 Opsi 1: Meminta ke Developer
 
 📩 Kontak:
 
-* Developer: [Nama Anda]
-* Email: [[emailanda@example.com](mailto:emailanda@example.com)]
+* Developer: [Rickardo]
+* Email: [[rickardolewokeda@gmail.com](mailto:rickardolewokeda@gmail.com)]
 
----
-
-#### 🔹 Opsi 2: Menggunakan API Sendiri
-
-Anda juga dapat menggunakan API milik sendiri:
+#### 🔹 Opsi 2: Gunakan API Sendiri
 
 1. Buat backend / API sendiri
 2. Generate file konfigurasi (contoh: `google-services.json` dari Firebase)
@@ -34,35 +38,13 @@ Anda juga dapat menggunakan API milik sendiri:
    ```
    app/google-services.json
    ```
-4. Sesuaikan endpoint API (base URL) di dalam kode jika diperlukan
+
+### 3. Jalankan Aplikasi
+
+* Hubungkan device / jalankan emulator
+
 
 ---
-
-### 📂 File yang Diabaikan (.gitignore)
-
-```id="id_ignore"
-app/google-services.json
-*.json (jika diperlukan)
-```
-
----
-
-### 🧠 Catatan
-
-* Pastikan API Anda aktif dan dapat diakses
-* Periksa kembali konfigurasi jaringan
-* Untuk development lokal, gunakan IP yang sesuai (misalnya `10.0.2.2` untuk emulator Android)
-
----
-
-### ✅ Ringkasan
-
-Repository ini hanya berisi **source code aplikasi**,
-sedangkan konfigurasi API harus ditambahkan secara terpisah.
-
----
-
-## 🌐 English Version
 
 ### ⚠️ Important
 
@@ -70,34 +52,28 @@ For security and privacy reasons, this project **does not include API configurat
 
 ---
 
-### 📌 Why is it not included?
+## 🚀 How to Run This Project
 
-Sensitive files are excluded to:
+### 1. Download / Clone Project
 
-* Prevent unauthorized access to backend services
-* Protect system integrity and user data
-* Follow software development best practices
+Choose one of the following methods:
 
+**🔹 Via Git (recommended)**
+**🔹 Download ZIP**
 ---
 
-### 🚀 How to Run This Project
+### 2. API Configuration
 
-You have two options:
+This project requires API configuration files that are **not included**.
 
-#### 🔹 Option 1: Request Access
-
-You can request the API configuration file by contacting the developer.
+#### 🔹 Option 1: Request from Developer
 
 📩 Contact:
 
-* Developer: [Your Name]
-* Email: [[your-email@example.com](mailto:your-email@example.com)]
-
----
+* Developer: [Rickardo]
+* Email: [[rickardolewokeda@gmail.com](mailto:rickardolewokeda@gmail.com)]
 
 #### 🔹 Option 2: Use Your Own API
-
-You may configure the project using your own API:
 
 1. Create your own backend / API
 2. Generate the configuration file (e.g., `google-services.json` from Firebase)
@@ -106,32 +82,11 @@ You may configure the project using your own API:
    ```
    app/google-services.json
    ```
-4. Update the API base URL in the code if necessary
+### 3. Run the Application
 
+* Connect a device or run an emulator
 ---
 
-### 📂 Ignored Files (.gitignore)
 
-```id="en_ignore"
-app/google-services.json
-*.json (if applicable)
-```
 
----
-
-### 🧠 Notes
-
-* Ensure your API is active and accessible
-* Double-check network configuration
-* For local development, use the correct IP (e.g., `10.0.2.2` for Android emulator)
-
----
-
-### ✅ Summary
-
-This repository contains **only the application source code**,
-while API configuration must be provided separately.
-
----
-
-Thank you for your understanding 🙌
+Thank you 🙌
