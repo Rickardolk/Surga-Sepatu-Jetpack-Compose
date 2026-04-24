@@ -15,7 +15,6 @@ Untuk alasan keamanan dan privasi, proyek ini **tidak menyertakan file konfigura
 Pilih salah satu metode berikut:
 
 **🔹 Via Git (disarankan)**
-
 ---
 **🔹 Download ZIP**
 ---
