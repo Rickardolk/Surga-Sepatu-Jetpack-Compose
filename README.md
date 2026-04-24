@@ -1,8 +1,7 @@
 # 👟 Surga Sepatu — Online Shoe Store
 
-## 🇮🇩 Bahasa Indonesia
 
-### 📌 Deskripsi Aplikasi
+###  Deskripsi Aplikasi
 
 Surga Sepatu adalah aplikasi toko online yang berfokus pada **penjualan sepatu secara khusus**.
 Aplikasi ini dirancang untuk memberikan pengalaman belanja yang **mudah, cepat, dan modern**, sehingga pengguna dapat dengan nyaman mencari dan membeli berbagai jenis sepatu.
@@ -69,9 +68,8 @@ app/google-services.json
 
 ---
 
-# 🌐 English
 
-### 📌 Application Description
+### Application Description
 
 Surga Sepatu is an online shopping application focused specifically on **selling shoes**.
 This application is designed to provide an **easy, fast, and modern shopping experience**, allowing users to browse and purchase various types of shoes conveniently.
