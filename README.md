@@ -1,57 +1,73 @@
-# 🔐 API Configuration Notice / Pemberitahuan Konfigurasi API
+# 👟 Surga Sepatu — Online Shoe Store
+
+Surga Sepatu adalah aplikasi **toko online khusus sepatu**, yang memungkinkan pengguna untuk menjelajahi, memilih, dan membeli berbagai jenis sepatu dengan mudah.
+
+Aplikasi ini dirancang dengan tampilan modern dan pengalaman pengguna yang sederhana.
 
 ---
 
-### ⚠️ Penting
+## 🛍️ Fitur Utama
 
-Untuk alasan keamanan dan privasi, proyek ini **tidak menyertakan file konfigurasi API** (seperti `google-services.json`, API key, atau kredensial lainnya) di dalam repository.
+* Katalog sepatu lengkap
+* Detail produk
+* Sistem pembelian
+* UI modern berbasis mobile
+
+---
+
+## 🔐 API Configuration Notice
+
+File API tidak disertakan dalam repository.
 
 ---
 
 ## 🚀 Cara Menjalankan Project
 
-### 1. Download / Clone Project
+### 1. Download / Clone
 
-Gunakan salah satu metode berikut:
+```bash
+git clone https://github.com/username/repo.git
+```
 
-#### 🔹 Via Git
-#### 🔹 Download ZIP
+---
 
 ### 2. Konfigurasi API
 
-Project ini memerlukan file konfigurasi API yang **tidak disertakan**.
+* Hubungi developer
+  atau
+* Gunakan API sendiri:
 
-#### 🔹 Opsi 1: Meminta ke Developer
+```
+app/google-services.json
+```
 
-📩 Kontak:
-
-* Developer: [Rickardo]
-* Email: [[rickardolewokeda@gmail.com](mailto:rickardolewokeda@gmail.com)]
-
-#### 🔹 Opsi 2: Gunakan API Sendiri
-
-1. Buat backend / API sendiri
-2. Generate file konfigurasi (contoh: `google-services.json` dari Firebase)
-3. Letakkan file di:
-
-   ```
-   app/google-services.json
-   ```
+---
 
 ### 3. Jalankan Aplikasi
 
-* Hubungkan device / jalankan emulator
-
-
-
-<br>
-<br>
-
-### ⚠️ Important
-
-For security and privacy reasons, this project **does not include API configuration files** (such as `google-services.json`, API keys, or other credentials) in the repository.
+* Jalankan di emulator / device
 
 ---
+
+
+
+
+<br>
+<br>
+
+## 👟 Surga Sepatu — Online Shoe Store
+
+Surga Sepatu is a **mobile e-commerce application focused on selling shoes**.
+Users can browse, view details, and purchase products easily.
+
+---
+
+## 🛍️ Features
+
+* Product catalog
+* Product details
+* Purchase system
+* Modern UI
 
 ## 🚀 How to Run This Project
 
