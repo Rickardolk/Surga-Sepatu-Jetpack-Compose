@@ -91,7 +91,7 @@ Choose one of the following methods:
 #### 🔹 Via Git
 
 ```bash id="ss_git_clone_en"
-git clone https://github.com/username/repository-name.git
+git clone https://github.com/Rickardolk/Surga-Sepatu-Jetpack-Compose.git
 ```
 
 #### 🔹 Download ZIP
