@@ -2,8 +2,6 @@
 
 ---
 
-## 🇮🇩 Bahasa Indonesia
-
 ### ⚠️ Penting
 
 Untuk alasan keamanan dan privasi, proyek ini **tidak menyertakan file konfigurasi API** (seperti `google-services.json`, API key, atau kredensial lainnya) di dalam repository.
