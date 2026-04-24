@@ -12,7 +12,7 @@ Untuk alasan keamanan dan privasi, proyek ini **tidak menyertakan file konfigura
 
 ### 1. Download / Clone Project
 
-Pilih salah satu metode berikut:
+Gunakan salah satu metode berikut:
 
 #### 🔹 Via Git
 #### 🔹 Download ZIP
@@ -57,8 +57,8 @@ For security and privacy reasons, this project **does not include API configurat
 
 Choose one of the following methods:
 
-**🔹 Via Git (recommended)**
-**🔹 Download ZIP**
+#### 🔹 Via Git
+#### 🔹 Download ZIP
 ---
 
 ### 2. API Configuration
