@@ -69,6 +69,8 @@ Users can browse, view details, and purchase products easily.
 * Purchase system
 * Modern UI
 
+---
+
 ## 🚀 How to Run This Project
 
 ### 1. Download / Clone Project
@@ -77,6 +79,8 @@ Choose one of the following methods:
 
 #### 🔹 Via Git
 #### 🔹 Download ZIP
+
+---
 
 ### 2. API Configuration
 
