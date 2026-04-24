@@ -44,6 +44,7 @@ Project ini memerlukan file konfigurasi API yang **tidak disertakan**.
 
 
 ---
+<br>
 
 ### ⚠️ Important
 
@@ -59,7 +60,6 @@ Choose one of the following methods:
 
 #### 🔹 Via Git
 #### 🔹 Download ZIP
----
 
 ### 2. API Configuration
 
