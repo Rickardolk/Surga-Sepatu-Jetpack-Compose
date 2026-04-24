@@ -1,43 +1,59 @@
 # 👟 Surga Sepatu — Online Shoe Store
 
-Surga Sepatu adalah aplikasi **toko online khusus sepatu**, yang memungkinkan pengguna untuk menjelajahi, memilih, dan membeli berbagai jenis sepatu dengan mudah.
+## 🇮🇩 Bahasa Indonesia
 
-Aplikasi ini dirancang dengan tampilan modern dan pengalaman pengguna yang sederhana.
+### 📌 Deskripsi Aplikasi
 
----
-
-## 🛍️ Fitur Utama
-
-* Katalog sepatu lengkap
-* Detail produk
-* Sistem pembelian
-* UI modern berbasis mobile
+Surga Sepatu adalah aplikasi toko online yang berfokus pada **penjualan sepatu secara khusus**.
+Aplikasi ini dirancang untuk memberikan pengalaman belanja yang **mudah, cepat, dan modern**, sehingga pengguna dapat dengan nyaman mencari dan membeli berbagai jenis sepatu.
 
 ---
 
-## 🔐 API Configuration Notice
+### ⚠️ Penting
 
-File API tidak disertakan dalam repository.
+Untuk alasan keamanan dan privasi, proyek ini **tidak menyertakan file konfigurasi API** (seperti `google-services.json`, API key, atau kredensial lainnya) di dalam repository.
 
 ---
 
 ## 🚀 Cara Menjalankan Project
 
-### 1. Download / Clone
+### 1. Download / Clone Project
 
-```bash
-git clone https://github.com/username/repo.git
+Gunakan salah satu metode berikut:
+
+#### 🔹 Via Git
+
+```bash id="ss_git_clone_id"
+git clone https://github.com/username/repository-name.git
 ```
+
+#### 🔹 Download ZIP
+
+* Klik tombol **Code → Download ZIP**
+* Extract ke folder lokal
 
 ---
 
 ### 2. Konfigurasi API
 
-* Hubungi developer
-  atau
-* Gunakan API sendiri:
+Project ini memerlukan file konfigurasi API yang **tidak disertakan**.
 
-```
+#### 🔹 Opsi 1: Meminta ke Developer
+
+📩 Kontak:
+
+* Developer: Rickardo
+* Email: [rickardolewokeda@gmail.com](mailto:rickardolewokeda@gmail.com)
+
+---
+
+#### 🔹 Opsi 2: Gunakan API Sendiri
+
+1. Buat backend / API sendiri
+2. Generate file konfigurasi
+3. Letakkan file di:
+
+```id="ss_config_path"
 app/google-services.json
 ```
 
@@ -45,29 +61,26 @@ app/google-services.json
 
 ### 3. Jalankan Aplikasi
 
-* Jalankan di emulator / device
+* Hubungkan device / jalankan emulator
 
 ---
 
-
-
-
 <br>
-<br>
-
-## 👟 Surga Sepatu — Online Shoe Store
-
-Surga Sepatu is a **mobile e-commerce application focused on selling shoes**.
-Users can browse, view details, and purchase products easily.
 
 ---
 
-## 🛍️ Features
+# 🌐 English
 
-* Product catalog
-* Product details
-* Purchase system
-* Modern UI
+### 📌 Application Description
+
+Surga Sepatu is an online shopping application focused specifically on **selling shoes**.
+This application is designed to provide an **easy, fast, and modern shopping experience**, allowing users to browse and purchase various types of shoes conveniently.
+
+---
+
+### ⚠️ Important
+
+For security and privacy reasons, this project **does not include API configuration files** (such as `google-services.json`, API keys, or other credentials) in the repository.
 
 ---
 
@@ -78,7 +91,15 @@ Users can browse, view details, and purchase products easily.
 Choose one of the following methods:
 
 #### 🔹 Via Git
+
+```bash id="ss_git_clone_en"
+git clone https://github.com/username/repository-name.git
+```
+
 #### 🔹 Download ZIP
+
+* Click **Code → Download ZIP**
+* Extract it to your local folder
 
 ---
 
@@ -90,22 +111,28 @@ This project requires API configuration files that are **not included**.
 
 📩 Contact:
 
-* Developer: [Rickardo]
-* Email: [[rickardolewokeda@gmail.com](mailto:rickardolewokeda@gmail.com)]
+* Developer: Rickardo
+* Email: [rickardolewokeda@gmail.com](mailto:rickardolewokeda@gmail.com)
+
+---
 
 #### 🔹 Option 2: Use Your Own API
 
 1. Create your own backend / API
-2. Generate the configuration file (e.g., `google-services.json` from Firebase)
+2. Generate the configuration file
 3. Place the file in:
 
-   ```
-   app/google-services.json
-   ```
+```id="ss_config_path_en"
+app/google-services.json
+```
+
+---
+
 ### 3. Run the Application
 
 * Connect a device or run an emulator
 
+---
 
 <br>
 
